@@ -7,7 +7,7 @@
                     <p>Get teamed up with people of the same will.</p>
                 </div>
                 <div class="btn_general">
-                    <button class="btn_all">Get started for free</button>
+                    <button class="btn-all">Get started for free</button>
                 </div>
             </div>
             <div class="row">
@@ -64,6 +64,13 @@ section{
     overflow: hidden;
 }
 
+.btn-all{
+    padding: 10px 25px;
+    border-radius: 5px;
+    background: #20ad96;
+    border: none;
+    color:white
+}
 
 
 
