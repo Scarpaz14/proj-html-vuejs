@@ -46,7 +46,6 @@ export default {
 }
 
 .worker{
-
     .img-fluid{
         border-radius: 10px;
     }

@@ -16,7 +16,7 @@
                     <small>/Frelancer</small>
                </div>
             </div>
-            <div class="row text-center my-5">
+            <div class="row images-client text-center my-5">
                 <div class="col-2">
                     <img src="../../assets/image/client-logo-colored-01.png" alt="">
                 </div>
@@ -47,6 +47,14 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
+.images-client{
+    .col-2{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
 .course-img{
     width: 280px;
     height: 280px;
