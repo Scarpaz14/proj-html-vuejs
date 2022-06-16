@@ -4,6 +4,7 @@
     <StatisticsSectionVue/>
     <WorkSectionVue/>
     <CoursesSectionVue/>
+    <TalkAboutSectionVue/>
 
   </main>
 </template>
@@ -13,17 +14,19 @@ import HeroSectionVue from '../sections/HeroSection.vue'
 import StatisticsSectionVue from '../sections/StatisticsSection.vue'
 import WorkSectionVue from '../sections/WorkSection.vue'
 import CoursesSectionVue from '../sections/CoursesSection.vue'
+import TalkAboutSectionVue from '../sections/TalkAboutSection.vue'
 export default {
     name:'MainComponent',
     components:{
     HeroSectionVue,
     StatisticsSectionVue,
     WorkSectionVue,
-    CoursesSectionVue
+    CoursesSectionVue,
+    TalkAboutSectionVue
 }
 }
 </script>
 
-<style>
+<style lang="scss" scoped>
 
 </style>
