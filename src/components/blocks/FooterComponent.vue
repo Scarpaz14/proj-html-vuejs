@@ -1,17 +1,21 @@
 <template>
   <footer>
-    <Footerhero/>
+    <FooterHeroSection/>
+    <StarterNowFooterSections/>
 
   </footer>
 </template>
 
 <script>
-import Footerhero from '../sections/FooterHero'
+import FooterHeroSection from '../sections/FooterHeroSection'
+import StarterNowFooterSections from '../sections/StarterNowFooterSections.vue'
  
 export default {
     name: 'FooterComponent',
     components:{
-        Footerhero
+        FooterHeroSection,
+        StarterNowFooterSections
+
     }
     
 
