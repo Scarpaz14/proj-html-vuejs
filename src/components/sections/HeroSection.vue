@@ -4,7 +4,7 @@
             <div class="hero-paragrafh text-center text-white py-4">
                 <div class="title">
                     <h1>Learn At Your Own Pace!</h1>
-                    <p>Get teamed up with people of the same will.</p>
+                    <p class="my-4">Get teamed up with people of the same will.</p>
                 </div>
                 <div class="btn_general">
                     <button class="btn-all">Get started for free</button>
@@ -25,6 +25,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import '../../assets/style/mixins.scss';
 
 section{
     background-color: #1f1f52;
@@ -38,11 +39,7 @@ section{
     width: 100%;
 }
 .btn-all{
-    padding: 10px 25px;
-    border-radius: 5px;
-    background: #20ad96;
-    border: none;
-    color:white
+    @include btn-general
 }
 
 

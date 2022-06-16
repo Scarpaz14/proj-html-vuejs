@@ -5,7 +5,7 @@
                 <div class="col">
                     <span>Start today for getting Online Certification</span>
                     <h4>You can be yuor own guiding star with our help!</h4>
-                    <div class="btn_general">
+                    <div class="btn_general pt-4">
                         <button class="btn-all">Get started for free</button>
                     </div>
                 </div>
@@ -21,12 +21,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import '../../assets/style/mixins.scss';
 .btn-all{
-    padding: 10px 25px;
-    border-radius: 5px;
-    background: #20ad96;
-    border: none;
-    color:white
+    @include btn-general
 }
 
 

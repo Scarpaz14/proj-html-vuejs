@@ -37,7 +37,7 @@
             <div class="col-10">
                 <div class="service">
                     <p>TOGHETER WE CAN CREATE</p>
-                    <h1>Services We Can Provide for my Clientss</h1>
+                    <h1 class="mb-5">Services We Can Provide for my Clientss</h1>
                 </div>
                 <ul class="service-list">
                     <li>
@@ -53,6 +53,9 @@
                       <p><i class="fa-solid fa-check"></i>Select & Customize to yuor preferences</p>
                     </li>
                 </ul>
+                <div class="btn_general">
+                    <button class="btn-all">Get started for free</button>
+                </div>
             </div>
         </div>
     </div>
@@ -66,8 +69,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
-
+@import '../../assets/style/mixins.scss';
 .descpition{
     border: 2px solid black;
     padding: 20px;
@@ -86,6 +88,12 @@ export default {
     }
     .fa-check{
         margin-right: 10px;
+        color:#20ad96
     }
 }
+
+.btn-all{
+    @include btn-general
+}
+
 </style>

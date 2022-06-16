@@ -88,6 +88,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import '../../assets/style/mixins.scss';
 #courses{
     margin: 200px 0;
     background-color: #f5f7fa;
@@ -112,12 +113,7 @@ h5,h1{
     object-fit: cover;
     border-radius: 50%;
 }
-
 .btn-all{
-    padding: 10px 25px;
-    border-radius: 5px;
-    background: #20ad96;
-    border: none;
-    color:white
+    @include btn-general
 }
 </style>
