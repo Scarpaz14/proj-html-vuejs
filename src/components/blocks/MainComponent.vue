@@ -5,6 +5,7 @@
     <WorkSectionVue/>
     <CoursesSectionVue/>
     <TalkAboutSectionVue/>
+    <LastWorkSectionVue/>
 
   </main>
 </template>
@@ -15,6 +16,7 @@ import StatisticsSectionVue from '../sections/StatisticsSection.vue'
 import WorkSectionVue from '../sections/WorkSection.vue'
 import CoursesSectionVue from '../sections/CoursesSection.vue'
 import TalkAboutSectionVue from '../sections/TalkAboutSection.vue'
+import LastWorkSectionVue from '../sections/LastWorkSection.vue'
 export default {
     name:'MainComponent',
     components:{
@@ -22,7 +24,8 @@ export default {
     StatisticsSectionVue,
     WorkSectionVue,
     CoursesSectionVue,
-    TalkAboutSectionVue
+    TalkAboutSectionVue,
+    LastWorkSectionVue
 }
 }
 </script>
