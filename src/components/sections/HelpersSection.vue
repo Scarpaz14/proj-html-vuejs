@@ -9,7 +9,7 @@
             </div>
             <div class="row mb-5">
                 <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3" v-for="(icon,index) in icons" :key="index">
-                    <img :src="icon.icon" alt="">
+                    <img class="helpers-img" :src="icon.icon" alt="">
                     <h4>{{icon.title}}</h4>
                     <p class="text">{{icon.text}}</p>
                 </div>
@@ -55,6 +55,11 @@ export default {
 @import '../../assets/style/mixins.scss';
 mark{
   @include markColor;
+}
+
+.helpers-img{
+    box-shadow: 10px 5px 5px lightgray;
+    border-radius: 10px;
 }
 
 #helpers{

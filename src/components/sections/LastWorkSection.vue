@@ -9,7 +9,7 @@
             </div>
             <div class="row">
                 <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4" v-for="(worker,index) in works" :key="index">
-                     <img class="img-fluid" :src='worker.image' alt="">
+                     <img class="img-fluid worker-img" :src='worker.image' alt="">
                      <h6 class="worker mt-4">{{worker.work}}</h6>
                      <h4>{{worker.info}}</h4>
                      <span class="info"><small><i class="fa-regular fa-calendar"></i>{{worker.date}}</small> <small><i class="fa-regular fa-eye"></i>{{worker.wiews}}</small></span>
@@ -70,7 +70,9 @@ mark{
 .worker, .info{
     color:grey
 }
-
+.worker-img{
+box-shadow: 10px 5px 5px lightgray;
+}
 small{
     margin-right: 10px;
     .fa-calendar,.fa-eye{

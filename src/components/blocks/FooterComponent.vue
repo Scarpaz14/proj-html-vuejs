@@ -72,7 +72,7 @@ export default {
     }
     a{
         text-decoration: none;
-        color:grey
+        color:var(--terziary-color)
     }
 
     ul{
@@ -81,10 +81,10 @@ export default {
 }
 .social{
     font-size:40px;
-    color:grey
+    color:var(--terziary-color)
 }
 p,h6{
-    color:grey
+    color:var(--terziary-color)
 }
     
 
