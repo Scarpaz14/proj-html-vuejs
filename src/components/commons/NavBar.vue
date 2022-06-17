@@ -8,23 +8,8 @@
   </button>
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home <i class="fa-solid fa-angle-down"></i></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Pages <i class="fa-solid fa-angle-down"></i></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Courses <i class="fa-solid fa-angle-down"></i></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Faeatures <i class="fa-solid fa-angle-down"></i></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Blogs <i class="fa-solid fa-angle-down"></i></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Shop <i class="fa-solid fa-angle-down"></i></a>
+      <li class="nav-item active" v-for="(link,index) in links" :key="index">
+        <a class="nav-link mx-2" href="#">{{link.text}} <i class="fa-solid fa-angle-down"></i></a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
@@ -35,6 +20,7 @@
     </ul>
     <form class="form-inline my-2 my-lg-0">
         <input class="form-control mr-sm-2" type="search" placeholder="Search"  aria-label="Search" >
+        <i class="fa-solid fa-magnifying-glass"></i>
     </form>
   </div>
 </nav>
@@ -43,7 +29,31 @@
 <script>
 
 export default {
-    name:'NavBar'
+    name:'NavBar',
+     data(){
+        return{
+            links: [
+                {
+                    text:"Home",
+                },
+                {
+                    text:"Pages",  
+                },
+                {
+                    text:"Courses",                 
+                },
+                {
+                    text:"Features",
+                },
+                {
+                    text:"Blog",
+                },
+                {
+                    text:"Shop",
+                },
+            ],
+        }
+    }
 
 }
 </script>
@@ -71,6 +81,7 @@ form{
     display: flex;
     justify-content: end;
 }
+
 
 
 </style>

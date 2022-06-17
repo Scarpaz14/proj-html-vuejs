@@ -6,7 +6,7 @@
                     <div class="section-title mb-5">
                         <h3>Let passion and determination be the guide along the way and develop at your own pace that's confortable</h3>
                         <p class="name fw-bold mt-5">FANNIE MORENO</p>
-                        <small>/Founder & CEO</small>
+                        <small id="founder">/Founder & CEO</small>
                     </div>
                 </div>
             </div>
@@ -29,20 +29,20 @@ export default {
            
             numbers: [
                 {
-                    "number":"1.926",
-                    "typo": "finished lesson",
+                    number:"1.926",
+                    typo: "finished lesson",
                 },
                 {
-                    "number":"3.092+",
-                    "typo": "enrolled learners",
+                    number:"3.092+",
+                    typo: "enrolled learners",
                 },
                 {
-                    "number":"200",
-                    "typo": "online instructors",
+                    number:"200",
+                    typo: "online instructors",
                 },
                 {
-                    "number":"100%",
-                    "typo": "satisfaction rate",
+                    number:"100%",
+                    typo: "satisfaction rate",
                 },
             ],
         }
@@ -54,7 +54,7 @@ export default {
 <style lang="scss" scoped>
 
 #statistics{
-    margin-top: 200px ;
+    margin: 150px 0;
 }
 
 .number-statistics{
@@ -67,5 +67,9 @@ export default {
     p:last-child{
         text-transform: uppercase;
     }
+}
+
+#founder{
+    color:grey
 }
 </style>

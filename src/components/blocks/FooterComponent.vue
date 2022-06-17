@@ -7,39 +7,39 @@
             <div class="row">
                 <div class="col-6">
                     <h4>Addres</h4>
-                    <small>382 NE 191st St #87394 Miami, FL 33179-3899</small>
-                    <small>+1(305) 547-90909(9am - 5pm EST, Monday-Friday)</small>\
-                    <small>support@maxcoach.com</small>
+                    <p>382 NE 191st St #87394 Miami, FL 33179-3899</p>
+                    <p>+1(305) 547-90909(9am - 5pm EST, Monday-Friday)</p>
+                    <p>support@maxcoach.com</p>
                     <div class="social"><i class="fa-brands fa-facebook-square"></i><i class="fa-brands fa-twitter mx-4"></i><i class="fa-brands fa-instagram"></i><i class="fa-brands fa-linkedin mx-4"></i></div>
                 </div>
                  <div class="col-2">
-                    <h4>Addres</h4>
+                    <h4>Explore</h4>
                     <ul>
-                        <li><a href="#">link</a></li>
-                        <li><a href="#">link</a></li>
-                        <li><a href="#">link</a></li>
+                        <li><a href="#">Start here</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">About us</a></li>
+                    </ul>
+                </div>
+                 <div class="col-2 pt-4 mt-2">
+                    <ul>
+                        <li><a href="#">Succes story</a></li>
+                        <li><a href="#">Courses</a></li>
+                        <li><a href="#">Contact us</a></li>
                     </ul>
                 </div>
                  <div class="col-2">
-                     <h4>Addres</h4>
+                     <h4>Information</h4>
                     <ul>
-                        <li><a href="#">link</a></li>
-                        <li><a href="#">link</a></li>
-                        <li><a href="#">link</a></li>
-                    </ul>
-                </div>
-                 <div class="col-2">
-                     <h4>Addres</h4>
-                    <ul>
-                        <li><a href="#">link</a></li>
-                        <li><a href="#">link</a></li>
-                        <li><a href="#">link</a></li>
+                        <li><a href="#">Membership</a></li>
+                        <li><a href="#">Purchase guide</a></li>
+                        <li><a href="#">Privacy policy</a></li>
+                        <li><a href="#">Terms of services</a></li>
                     </ul>
                 </div>
             </div>
             <div class="row d-flex align-items-center text-center mt-5">
                 <div class="col">
-                    <h7>2020 MaxCoach. All Rights Reserved</h7>
+                    <h6>2020 MaxCoach. All Rights Reserved</h6>
                 </div>
             </div>
         </div>
@@ -72,12 +72,18 @@ export default {
     }
     a{
         text-decoration: none;
-        color:inherit
+        color:grey
+    }
+
+    ul{
+        padding: 0;
     }
 }
-
 .social{
     font-size:40px;
+    color:grey
+}
+p,h6{
     color:grey
 }
     

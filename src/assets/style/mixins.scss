@@ -5,3 +5,8 @@
     border: none;
     color:white
 }
+
+@mixin markColor {
+    color:#20ad96;
+    background-color: inherit;
+}

@@ -4,53 +4,72 @@
             <div class="row text-center mb-5">
                 <div class="col">
                     <p>WANNA TRANFORM YOUR LIFE?</p>
-                    <h1>Glad to Help You Learn</h1>
+                    <h1 class="mb-5">Glad to<mark>Help You</mark>Learn</h1>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-3">
-                    <i class="fa-regular fa-flag"></i>
-                    <h5>Idea Discussion</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem laborum quaerat nam eius, nostrum inventore dolore dolorem esse dolorum perferendis velit voluptatibus vel necessitatibus facere commodi! Facilis, optio amet? Vero!</p>
-                </div>
-                <div class="col-3">
-                    <i class="fa-solid fa-gear"></i>
-                    <h5>Idea Discussion</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem laborum quaerat nam eius, nostrum inventore dolore dolorem esse dolorum perferendis velit voluptatibus vel necessitatibus facere commodi! Facilis, optio amet? Vero!</p>
-                </div>
-                <div class="col-3">
-                    <i class="fa-regular fa-life-ring"></i>
-                    <h5>Idea Discussion</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem laborum quaerat nam eius, nostrum inventore dolore dolorem esse dolorum perferendis velit voluptatibus vel necessitatibus facere commodi! Facilis, optio amet? Vero!</p>
-                </div>
-                <div class="col-3">
-                    <i class="fa-solid fa-tv"></i>
-                    <h5>Idea Discussion</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem laborum quaerat nam eius, nostrum inventore dolore dolorem esse dolorum perferendis velit voluptatibus vel necessitatibus facere commodi! Facilis, optio amet? Vero!</p>
+            <div class="row mb-5">
+                <div class="col-3" v-for="(icon,index) in icons" :key="index">
+                    <img :src="icon.icon" alt="">
+                    <h4>{{icon.title}}</h4>
+                    <p class="text">{{icon.text}}</p>
                 </div>
             </div>
-
         </div>
     </section>
 </template>
 
 <script>
 export default {
-    name:'HelpersSection'
+    name:'HelpersSection',
+    data(){
+        return{
+           
+            icons: [
+                {
+                    icon:"https://maxcoach.thememove.com/wp-content/uploads/2020/03/landing-feature-ux-design.png",
+                    title: "Idea Discussion",
+                    text:"Get teamed up with the specilists who work and tech coding for years at famous universities"
+                },
+                {
+                    icon:"https://maxcoach.thememove.com/wp-content/uploads/2020/03/landing-feature-widely-compatible.png",
+                    title: "Web Development",
+                    text: "Learn to start building a awebpage from scratch. You decide youtnown pace, course and speed",
+                },
+                {
+                    icon:"https://maxcoach.thememove.com/wp-content/uploads/2020/03/landing-feature-awesome-font.png",
+                    title: "System Administration",
+                    text: "Learners are encouraged to study the mechanism and structure of the system administration",
+                },
+                {
+                    icon:"https://maxcoach.thememove.com/wp-content/uploads/2020/03/landing-feature-breadcrumbs-available-.png",
+                    title: "Graphic Design",
+                    text: "Have a passion for graphics and arts? Show your talents with confidence and self-asseriveness",
+                },
+            ],
+        }
+    }
 }
 </script>
 
 <style lang="scss" scoped>
+@import '../../assets/style/mixins.scss';
+mark{
+  @include markColor;
+}
 
 #helpers{
     padding: 70px 0;
 }
-h5{
+h4{
     margin: 20px 0;
 }
 
 .fa-gear,.fa-flag,.fa-life-ring,.fa-tv{
     font-size: 60px;
+}
+
+.text{
+    color:grey
 }
 
 </style>
