@@ -42,6 +42,11 @@ section{
     @include btn-general
 }
 
+.btn-all:hover{
+    @include hoverBtnWhite
+    
+}
+
 
 
 </style>

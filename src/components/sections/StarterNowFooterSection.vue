@@ -29,6 +29,9 @@ export default {
 .btn-all{
     @include btn-general
 }
+.btn-all:hover{
+    @include hoverBtnPurple
+}
 mark{
   @include markColor;
 }

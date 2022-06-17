@@ -2,39 +2,39 @@
   <section id="work">
     <div class="container d-flex">
         <div class="row">
-            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-10">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-10">
                 <div class="descpition mx-4">
                     <h4>Graphic Design</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, ut dolor, dignissimos ipsam tempore nostrum quaerat, quasi consectetur impedit dolorum est alias commodi temporibus doloribus necessitatibus quam exercitationem amet iure.</p>
+                    <p>Have a passion for graphics and arts? Show your talents with confidence and self-asserivensess.</p>
                     <img src="../../assets/image/home-6-service-image-01.png" alt="">
                 </div>
             </div>
-            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-10">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-10">
                 <div class="descpition mx-4">
                     <img src="../../assets/image/home-6-service-image-03.png" alt="">
                     <h4>Idea Discussion</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, ut dolor, dignissimos ipsam tempore nostrum quaerat, quasi consectetur impedit dolorum est alias commodi temporibus doloribus necessitatibus quam exercitationem amet iure.</p>
+                    <p>Get teamed up with the specialist who work and teach coding for years at famous universities.</p>
                 </div>
             </div>
         </div>
         <div class="row">
-             <div class="col-xs-12 col-sm-12 col-md-6 col-lg-10">
+             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-10">
                 <div class="descpition my-5 mx-4">
                     <h4>Business Administration</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, ut dolor, dignissimos ipsam tempore nostrum quaerat, quasi consectetur impedit dolorum est alias commodi temporibus doloribus necessitatibus quam exercitationem amet iure.</p>
+                    <p>Learners are encouraged to study the mechanism and structure of system administration.</p>
                     <img src="../../assets/image/home-6-service-image-02.png" alt="">
                 </div>
             </div>
-            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-10">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-10">
                 <div class="descpition mx-4">
                     <img src="../../assets/image/home-6-service-image-04.png" alt="">
                     <h4>Web Development</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, ut dolor, dignissimos ipsam tempore nostrum quaerat, quasi consectetur impedit dolorum est alias commodi temporibus doloribus necessitatibus quam exercitationem amet iure.</p>
+                    <p>Learn to start building a webpage from scratch. You decide your own pace, course and speed</p>
                 </div>
             </div>
         </div>
         <div class="row d-flex align-items-center">
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-10">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                 <div class="service">
                     <p>TOGHETER WE CAN CREATE</p>
                     <h1 class="mb-5">Services We <mark>Can Provide</mark> for my Clientss</h1>
@@ -44,13 +44,13 @@
                       <p><i class="fa-solid fa-check"></i>Select & Customize to yuor preferences</p>
                     </li>
                     <li>
-                      <p><i class="fa-solid fa-check"></i>Select & Customize to yuor preferences</p>
+                      <p><i class="fa-solid fa-check"></i>Change the tutor and make arrangements</p>
                     </li>
                     <li>
-                      <p><i class="fa-solid fa-check"></i>Select & Customize to yuor preferences</p>
+                      <p><i class="fa-solid fa-check"></i>Partecipate in events to join others</p>
                     </li>
                     <li>
-                      <p><i class="fa-solid fa-check"></i>Select & Customize to yuor preferences</p>
+                      <p><i class="fa-solid fa-check"></i>Get the desidered certificate deliverd at house</p>
                     </li>
                 </ul>
                 <div class="btn_general">
@@ -71,6 +71,10 @@ export default {
 <style lang="scss" scoped>
 @import '../../assets/style/mixins.scss';
 
+h4{
+    margin: 15px 0;
+}
+
 mark{
     @include markColor
 }
@@ -90,10 +94,14 @@ mark{
     }
     .fa-check{
         margin-right: 10px;
-        color:#20ad96
+        color:var(--primary-color);
     }
 }
 .btn-all{
     @include btn-general
+}
+
+.btn-all:hover{
+    @include hoverBtnPurple
 }
 </style>

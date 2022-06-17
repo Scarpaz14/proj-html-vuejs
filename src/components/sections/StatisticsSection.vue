@@ -60,7 +60,7 @@ export default {
 .number-statistics{
     p:first-child{
         font-size: 35px;
-        color: #20ad96;
+        color:var(--primary-color);
         font-weight: bold;
     }
     

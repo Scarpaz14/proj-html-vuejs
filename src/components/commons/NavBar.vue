@@ -20,7 +20,7 @@
     </ul>
     <form class="form-inline my-2 my-lg-0">
         <input class="form-control mr-sm-2" type="search" placeholder="Search"  aria-label="Search" >
-        <i class="fa-solid fa-magnifying-glass"></i>
+        <button type="button" class="btn btn-light"><i class="fa-solid fa-magnifying-glass"></i></button>
     </form>
   </div>
 </nav>
@@ -64,17 +64,30 @@ export default {
     height: 25px;
 }
 .navbar{
-    background-color: #1f1f52;
+    background-color: var(--secondary-color);
     a{
         color:white;
+    }
+
+    a:hover{
+      color:var(--primary-color);
+      transform: scale(1.1);
     }
 }
 form{
     display: flex;
 }
+.btn-light{
+  border: none;
+  background-color: white;
+  position: relative;
+  right: 10px;
+  color:var(--primary-color);
+}
 
 .form-control{
   width: 70%;
+  border: none;
 }
 
 #navbarSupportedContent{

@@ -1,7 +1,7 @@
 <template>
     <section>
         <div class="container">
-            <div class="row text-center">
+            <div class="row text-center mb-5">
                 <div class="col-12">
                     <h1>Why People Talk About<mark>MaxCoach</mark>?</h1>
                 </div>
@@ -11,9 +11,9 @@
                     <img class="course-img img-fluid" src="../../assets/image/person-talk-about.png" alt="">
                 </div>
                 <div class="col-6">
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id corporis magnam, suscipit quod facere natus porro eos ducimus! Animi quis quam quisquam cumque quas quia labore sequi in quos eius.</p>
-                    <p>MINA HOLLACE</p>
-                    <small>/Frelancer</small>
+                    <h4>I am free to learn at my own pace, follow my own schedule and choose the subject I like. Great study portal for people like me.</h4>
+                    <p class="fw-bold my-4">MINA HOLLACE</p>
+                    <span class="work">/Frelancer</span>
                </div>
             </div>
             <div class="row images-client text-center my-5">
@@ -61,14 +61,16 @@ export default {
 <style lang="scss" scoped>
 @import '../../assets/style/mixins.scss';
 .images-client{
-    .col-2{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 mark{
   @include markColor;
+}
+
+.work{
+    color:grey;
 }
 .course-img{
     width: 280px;

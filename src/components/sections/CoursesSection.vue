@@ -96,8 +96,14 @@ small{
     }
 }
 
+.course-type{
+    transition: 1s;
+}
+.course-type:hover{
+    @include hoverCard
+}
 #courses{
-    margin: 200px 0;
+    margin: 100px 0;
     background-color: #f5f7fa;
 }
 .price{
@@ -132,5 +138,9 @@ h5,h1{
 
 .btn-all{
     @include btn-general
+}
+
+.btn-all:hover{
+    @include hoverBtnPurple
 }
 </style>

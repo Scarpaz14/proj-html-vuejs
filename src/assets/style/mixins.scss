@@ -1,12 +1,32 @@
 @mixin btn-general {
     padding: 10px 25px;
     border-radius: 5px;
-    background: #20ad96;
+    background:var(--primary-color);
     border: none;
-    color:white
+    color:white;
+    transition: 0.5s;
+}
+
+@mixin hoverCard{
+    background-color:white;
+    transform: scale(1.1);
+    transition: 1s;
+    color:var(--primary-color);
+    cursor: pointer;
 }
 
 @mixin markColor {
-    color:#20ad96;
+    color:var(--primary-color);
     background-color: inherit;
+}
+
+@mixin hoverBtnWhite {
+    background-color: white;
+    color:var(--primary-color);
+    transform: scale(1.1);
+}
+@mixin hoverBtnPurple {
+    background-color: var(--secondary-color);
+    color:white;
+    transform: scale(1.1);
 }
