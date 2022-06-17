@@ -2,13 +2,13 @@
     <section id="courses">
         <div class="container">
             <div class="row text-center">
-                <div class="col">
+                <div class="col-12">
                     <h5>CHOOSE A COURSE TO GET STARTED</h5>
                     <h1>Latest Featured<mark>Courses</mark></h1>
                 </div>
             </div>
             <div class="row">
-                <div class="col-6" v-for="(course,index) in courses" :key="index">
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6" v-for="(course,index) in courses" :key="index">
                     <div class="course-type d-flex">
                         <img class="course-img img-fluid" :src="course.image" alt="">
                         <div class="info">

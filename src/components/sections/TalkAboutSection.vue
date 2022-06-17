@@ -2,12 +2,12 @@
     <section>
         <div class="container">
             <div class="row text-center">
-                <div class="col">
+                <div class="col-12">
                     <h1>Why People Talk About<mark>MaxCoach</mark>?</h1>
                 </div>
             </div>
             <div class="row d-flex justify-content-center align-items-center">
-                <div class="col-3">
+                <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
                     <img class="course-img img-fluid" src="../../assets/image/person-talk-about.png" alt="">
                 </div>
                 <div class="col-6">
@@ -17,7 +17,7 @@
                </div>
             </div>
             <div class="row images-client text-center my-5">
-                <div class="col-2" v-for="(client,index) in clients" :key="index">
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-2" v-for="(client,index) in clients" :key="index">
                     <img :src="client.image" alt="">
                 </div>
             </div>

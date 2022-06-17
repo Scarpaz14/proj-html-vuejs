@@ -2,14 +2,14 @@
   <section id="work">
     <div class="container d-flex">
         <div class="row">
-            <div class="col-10">
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-10">
                 <div class="descpition mx-4">
                     <h4>Graphic Design</h4>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, ut dolor, dignissimos ipsam tempore nostrum quaerat, quasi consectetur impedit dolorum est alias commodi temporibus doloribus necessitatibus quam exercitationem amet iure.</p>
                     <img src="../../assets/image/home-6-service-image-01.png" alt="">
                 </div>
             </div>
-            <div class="col-10">
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-10">
                 <div class="descpition mx-4">
                     <img src="../../assets/image/home-6-service-image-03.png" alt="">
                     <h4>Idea Discussion</h4>
@@ -18,14 +18,14 @@
             </div>
         </div>
         <div class="row">
-             <div class="col-10">
+             <div class="col-xs-12 col-sm-12 col-md-6 col-lg-10">
                 <div class="descpition my-5 mx-4">
                     <h4>Business Administration</h4>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, ut dolor, dignissimos ipsam tempore nostrum quaerat, quasi consectetur impedit dolorum est alias commodi temporibus doloribus necessitatibus quam exercitationem amet iure.</p>
                     <img src="../../assets/image/home-6-service-image-02.png" alt="">
                 </div>
             </div>
-            <div class="col-10">
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-10">
                 <div class="descpition mx-4">
                     <img src="../../assets/image/home-6-service-image-04.png" alt="">
                     <h4>Web Development</h4>
@@ -34,7 +34,7 @@
             </div>
         </div>
         <div class="row d-flex align-items-center">
-            <div class="col-10">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-10">
                 <div class="service">
                     <p>TOGHETER WE CAN CREATE</p>
                     <h1 class="mb-5">Services We <mark>Can Provide</mark> for my Clientss</h1>

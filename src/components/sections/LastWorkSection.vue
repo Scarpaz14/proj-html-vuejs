@@ -8,7 +8,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-4" v-for="(worker,index) in works" :key="index">
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4" v-for="(worker,index) in works" :key="index">
                      <img class="img-fluid" :src='worker.image' alt="">
                      <h6 class="worker mt-4">{{worker.work}}</h6>
                      <h4>{{worker.info}}</h4>

@@ -2,13 +2,13 @@
     <section id="helpers">
         <div class="container">
             <div class="row text-center mb-5">
-                <div class="col">
+                <div class="col-12">
                     <p>WANNA TRANFORM YOUR LIFE?</p>
                     <h1 class="mb-5">Glad to<mark>Help You</mark>Learn</h1>
                 </div>
             </div>
             <div class="row mb-5">
-                <div class="col-3" v-for="(icon,index) in icons" :key="index">
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3" v-for="(icon,index) in icons" :key="index">
                     <img :src="icon.icon" alt="">
                     <h4>{{icon.title}}</h4>
                     <p class="text">{{icon.text}}</p>
